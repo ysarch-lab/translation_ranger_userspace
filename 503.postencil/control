@@ -1,0 +1,1 @@
+stencil.out stencil.err -o 512x512x98.out -- 512 512 98 20000
