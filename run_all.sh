@@ -44,6 +44,8 @@ export PROMOTE_1GB_MAP=no
 export NO_REPEAT_DEFRAG=no
 export CHILD_PROC_STAT=no
 
+sudo sysctl vm.break_1gb_allocation=1
+
 if [[ "x${NO_REPEAT_DEFRAG}" == "xyes" ]]; then
 	DEFRAG_OPT=_no_repeat
 fi
